@@ -1,221 +1,281 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="云南同思商贸有限公司 - 联系方式，地址、电话、邮箱、微信">
-  <meta name="keywords" content="联系我们,云南同思商贸,联系方式,地址,电话">
-  <title>联系我们 - 云南同思商贸有限公司</title>
-  <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - 云南同思商贸有限公司</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 40px;
+        }
+        .contact-info-box {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+        }
+        .contact-info-box h3 {
+            color: #1a5276;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 10px;
+        }
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 18px;
+        }
+        .contact-icon {
+            font-size: 20px;
+            margin-right: 12px;
+            min-width: 30px;
+            text-align: center;
+        }
+        .contact-item div strong {
+            color: #1a5276;
+        }
+        .contact-item div p {
+            margin: 4px 0 0 0;
+            color: #555;
+        }
+        .qr-section {
+            text-align: center;
+            margin-top: 25px;
+            padding-top: 25px;
+            border-top: 1px solid #ddd;
+        }
+        .qr-section img {
+            width: 160px;
+            height: 160px;
+            object-fit: contain;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .qr-section p {
+            margin-top: 10px;
+            color: #555;
+            font-size: 14px;
+        }
+        .inquiry-form {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .inquiry-form h3 {
+            color: #1a5276;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 18px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: #333;
+        }
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        .submit-btn {
+            background: #2980b9;
+            color: white;
+            padding: 12px 40px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .submit-btn:hover {
+            background: #1a5276;
+        }
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>云南同思商贸有限公司</h1>
+                <p>Yunnan Tungsi Trading Co., Ltd.</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="products.html">产品中心</a></li>
+                    <li><a href="advantages.html">核心优势</a></li>
+                    <li><a href="contact.html" class="active">联系我们</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switch">
+                <a href="contact.html" class="active">中文</a> |
+                <a href="../vi/contact.html">Tiếng Việt</a> |
+                <a href="../en/contact.html">English</a>
+            </div>
+        </div>
+    </header>
 
-<!-- 导航栏 -->
-<nav class="navbar">
-  <div class="container">
-    <a href="index.html" class="logo">
-      <div class="logo-icon">同</div>
-      <span class="logo-text">云南同思商贸</span>
-    </a>
-    <div class="nav-menu">
-      <a href="index.html">首页</a>
-      <a href="products.html">产品中心</a>
-      <a href="about.html">关于我们</a>
-      <a href="inquiry.html">在线询价</a>
-      <a href="contact.html" class="active">联系我们</a>
+    <section class="page-banner">
+        <div class="container">
+            <h2>联系我们</h2>
+            <p>期待与您的合作，欢迎随时咨询</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="contact-grid">
+            <!-- 左侧：联系方式 -->
+            <div class="contact-info-box">
+                <h3>📞 联系方式</h3>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                        <strong>公司地址</strong>
+                        <p>云南省昆明市西山区融城优郡B座写字楼6楼606</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div>
+                        <strong>联系电话</strong>
+                        <p>+86 159 2516 5428</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div>
+                        <strong>电子邮箱</strong>
+                        <p>14989056@qq.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">🕐</div>
+                    <div>
+                        <strong>工作时间</strong>
+                        <p>周一至周五：9:00 - 18:00（北京时间）</p>
+                    </div>
+                </div>
+
+                <!-- 微信二维码 -->
+                <div class="qr-section">
+                    <img src="../images/wechat-qr.jpg" alt="微信二维码 - 滇池呈海">
+                    <p>📱 微信扫码添加好友<br>微信号：<strong>滇池呈海</strong></p>
+                </div>
+            </div>
+
+            <!-- 右侧：留言表单 -->
+            <div class="inquiry-form">
+                <h3>💬 在线留言</h3>
+                <form id="inquiryForm" action="https://formspree.io/f/xwpogjda" method="POST">
+                    <div class="form-group">
+                        <label for="name">姓名 / Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">公司名称 / Company</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">电子邮箱 / Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">联系电话 / Phone</label>
+                        <input type="text" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="product">感兴趣的产品 / Product of Interest</label>
+                        <select id="product" name="product">
+                            <option value="">-- 请选择 / Please select --</option>
+                            <option value="32%液碱">32% 液碱 / 32% Liquid Caustic Soda</option>
+                            <option value="50%液碱">50% 液碱 / 50% Liquid Caustic Soda</option>
+                            <option value="盐酸">盐酸 / Hydrochloric Acid</option>
+                            <option value="硫酸">硫酸 / Sulfuric Acid</option>
+                            <option value="次氯酸钠">次氯酸钠 / Sodium Hypochlorite</option>
+                            <option value="双氧水">双氧水 / Hydrogen Peroxide</option>
+                            <option value="硫酸铵">硫酸铵 / Ammonium Sulfate</option>
+                            <option value="碳酸钙">碳酸钙（越南进口）/ Calcium Carbonate</option>
+                            <option value="其他">其他 / Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">详细需求 / Message *</label>
+                        <textarea id="message" name="message" placeholder="请描述您的需求，如规格、数量、交货地点等..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">提交咨询 / Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- 地图区域 -->
+        <div style="margin-top: 40px; border-radius: 8px; overflow: hidden;">
+            <h3 style="color: #1a5276; margin-bottom: 15px;">📍 公司位置</h3>
+            <iframe
+                src="https://map.baidu.com/poi/融城优郡/@12668208.145,2635782.145,19z"
+                width="100%"
+                height="350"
+                style="border:0; border-radius: 8px;"
+                allowfullscreen="">
+            </iframe>
+            <p style="text-align: center; color: #888; font-size: 13px; margin-top: 8px;">
+                📍 云南省昆明市西山区融城优郡B座写字楼6楼606
+            </p>
+        </div>
     </div>
-    <div class="nav-right">
-      <div class="lang-switch">
-        <a href="../zh/contact.html" class="active">中</a>
-        <a href="../vi/contact.html">越</a>
-        <a href="../en/contact.html">EN</a>
-      </div>
-      <a href="inquiry.html" class="nav-cta">立即询价</a>
-    </div>
-    <div class="mobile-menu-btn" onclick="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
-</nav>
 
-<!-- 页面标题 -->
-<section class="hero" style="padding:120px 0 60px;">
-  <div class="container">
-    <h1 style="font-size:36px; text-align:center;">联系我们</h1>
-    <p style="text-align:center; margin-top:16px; opacity:0.9;">欢迎与我们取得联系，我们将竭诚为您服务</p>
-  </div>
-</section>
-
-<!-- 联系方式 -->
-<section class="section">
-  <div class="container">
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:40px;">
-
-      <!-- 左侧：联系方式详情 -->
-      <div>
-        <h2 style="font-size:28px; color:var(--primary); margin-bottom:32px;">联系方式</h2>
-
-        <!-- 地址 -->
-        <div style="display:flex; gap:16px; margin-bottom:28px; padding:20px; background:var(--bg-light); border-radius:12px;">
-          <div style="font-size:36px; flex-shrink:0;">📍</div>
-          <div>
-            <h3 style="font-size:16px; color:var(--text-dark); margin-bottom:6px;">公司地址</h3>
-            <p style="font-size:15px; color:var(--text-mid); line-height:1.6;">云南省昆明市（待补充）</p>
-          </div>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>云南同思商贸有限公司</h3>
+                    <p>专业化学品贸易服务商，主营危化品内贸及碳酸钙进出口业务。</p>
+                </div>
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="products.html">产品中心</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>联系方式</h3>
+                    <p>📞 +86 159 2516 5428</p>
+                    <p>📧 14989056@qq.com</p>
+                    <p>📍 云南省昆明市西山区融城优郡B座写字楼6楼606</p>
+                    <p>📱 微信：滇池呈海</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 云南同思商贸有限公司 版权所有</p>
+            </div>
         </div>
-
-        <!-- 电话 -->
-        <div style="display:flex; gap:16px; margin-bottom:28px; padding:20px; background:var(--bg-light); border-radius:12px;">
-          <div style="font-size:36px; flex-shrink:0;">📞</div>
-          <div>
-            <h3 style="font-size:16px; color:var(--text-dark); margin-bottom:6px;">联系电话</h3>
-            <p style="font-size:15px; color:var(--text-mid); line-height:1.6;">（待补充）</p>
-            <p style="font-size:13px; color:var(--text-mid); margin-top:4px;">工作时间：9:00-18:00</p>
-          </div>
-        </div>
-
-        <!-- 邮箱 -->
-        <div style="display:flex; gap:16px; margin-bottom:28px; padding:20px; background:var(--bg-light); border-radius:12px;">
-          <div style="font-size:36px; flex-shrink:0;">✉️</div>
-          <div>
-            <h3 style="font-size:16px; color:var(--text-dark); margin-bottom:6px;">电子邮箱</h3>
-            <p style="font-size:15px; color:var(--text-mid); line-height:1.6;">（待补充）</p>
-          </div>
-        </div>
-
-        <!-- 微信 -->
-        <div style="display:flex; gap:16px; margin-bottom:28px; padding:20px; background:var(--bg-light); border-radius:12px;">
-          <div style="font-size:36px; flex-shrink:0;">💬</div>
-          <div>
-            <h3 style="font-size:16px; color:var(--text-dark); margin-bottom:6px;">微信</h3>
-            <p style="font-size:15px; color:var(--text-mid); line-height:1.6;">（待补充）</p>
-            <p style="font-size:13px; color:var(--text-mid); margin-top:4px;">扫码添加微信咨询</p>
-          </div>
-        </div>
-
-        <!-- WhatsApp -->
-        <div style="display:flex; gap:16px; margin-bottom:28px; padding:20px; background:var(--bg-light); border-radius:12px;">
-          <div style="font-size:36px; flex-shrink:0;">📱</div>
-          <div>
-            <h3 style="font-size:16px; color:var(--text-dark); margin-bottom:6px;">WhatsApp</h3>
-            <p style="font-size:15px; color:var(--text-mid); line-height:1.6;">（待补充）</p>
-            <a href="#" style="display:inline-block; background:#25D366; color:var(--white); padding:8px 16px; border-radius:6px; text-decoration:none; font-size:13px; font-weight:600; margin-top:8px;">WhatsApp 联系</a>
-          </div>
-        </div>
-
-        <!-- 在线咨询按钮 -->
-        <div style="margin-top:32px;">
-          <a href="inquiry.html" style="display:block; background:var(--primary); color:var(--white); padding:16px; border-radius:8px; text-align:center; text-decoration:none; font-size:16px; font-weight:600;">在线咨询 / 立即询价</a>
-        </div>
-      </div>
-
-      <!-- 右侧：地图占位 -->
-      <div>
-        <h2 style="font-size:28px; color:var(--primary); margin-bottom:32px;">公司位置</h2>
-        <div style="background:var(--bg-light); border-radius:12px; padding:120px 40px; text-align:center; color:var(--text-mid); min-height:500px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-          <div style="font-size:64px; margin-bottom:16px;">🗺️</div>
-          <p style="font-size:18px; font-weight:600; margin-bottom:8px;">地图位置</p>
-          <p style="font-size:14px;">云南省昆明市（待补充）</p>
-          <p style="font-size:13px; color:var(--text-mid); margin-top:16px; line-height:1.6;">（待补充：可嵌入百度地图或高德地图）</p>
-        </div>
-
-        <!-- 微信二维码 -->
-        <div style="margin-top:24px; padding:24px; background:var(--white); border-radius:12px; box-shadow:var(--shadow); text-align:center;">
-          <h3 style="font-size:16px; color:var(--primary); margin-bottom:16px;">扫码添加微信</h3>
-          <div style="width:150px; height:150px; margin:0 auto 12px; background:var(--bg-light); border-radius:8px; display:flex; align-items:center; justify-content:center; color:var(--text-mid); font-size:13px;">
-            （待补充）<br>微信二维码
-          </div>
-          <p style="font-size:13px; color:var(--text-mid);">微信扫码，随时咨询</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- 联系表单 -->
-<section class="section" style="background:var(--bg-light);">
-  <div class="container">
-    <h2 class="section-title">发送消息</h2>
-    <p style="text-align:center; color:var(--text-mid); margin-bottom:32px;">如果您有任何问题或需求，请留言，我们将尽快回复您</p>
-    <div style="max-width:700px; margin:0 auto; background:var(--white); border-radius:12px; padding:40px; box-shadow:var(--shadow);">
-      <form class="inquiry-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
-          <div class="form-group">
-            <label>姓名 *</label>
-            <input type="text" name="name" required placeholder="您的姓名">
-          </div>
-          <div class="form-group">
-            <label>电话 *</label>
-            <input type="tel" name="phone" required placeholder="手机号码">
-          </div>
-        </div>
-        <div class="form-group">
-          <label>电子邮箱</label>
-          <input type="email" name="email" placeholder="your@email.com">
-        </div>
-        <div class="form-group">
-          <label>留言内容 *</label>
-          <textarea name="message" rows="5" required placeholder="请描述您的需求或问题..."></textarea>
-        </div>
-        <button type="submit" class="form-submit" style="width:100%; font-size:16px; padding:14px;">发送消息</button>
-      </form>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section style="background:var(--primary); padding:48px 0; text-align:center;">
-  <div class="container">
-    <h2 style="color:var(--white); font-size:28px; margin-bottom:16px;">需要产品报价？</h2>
-    <p style="color:var(--white); opacity:0.9; margin-bottom:24px;">欢迎在线询价，我们将在24小时内回复您</p>
-    <a href="inquiry.html" class="btn btn-outline" style="font-size:16px; padding:16px 32px;">立即询价</a>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <h3>云南同思商贸有限公司</h3>
-        <p>专业从事危险化学品及普通货物贸易的综合性企业，为国内外客户提供优质的一站式化工原料供应服务。</p>
-      </div>
-      <div class="footer-links">
-        <h4>快速链接</h4>
-        <ul>
-          <li><a href="index.html">首页</a></li>
-          <li><a href="products.html">产品中心</a></li>
-          <li><a href="about.html">关于我们</a></li>
-          <li><a href="contact.html">联系我们</a></li>
-        </ul>
-      </div>
-      <div class="footer-links">
-        <h4>产品分类</h4>
-        <ul>
-          <li><a href="products.html#lye">碱类产品</a></li>
-          <li><a href="products.html#acid">酸类产品</a></li>
-          <li><a href="products.html#reagent">化学试剂</a></li>
-          <li><a href="products.html#electronic">电子级化学品</a></li>
-        </ul>
-      </div>
-      <div class="footer-links">
-        <h4>联系方式</h4>
-        <ul>
-          <li>云南省昆明市（待补充）</li>
-          <li>电话：（待补充）</li>
-          <li>邮箱：（待补充）</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2026 云南同思商贸有限公司 版权所有 | Yunnan Tongsi Trading Co., Ltd.</p>
-    </div>
-  </div>
-</footer>
-
-<script src="../js/main.js"></script>
+    </footer>
 </body>
 </html>
