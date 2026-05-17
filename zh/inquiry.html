@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="云南同思商贸有限公司 - 在线询价，获取产品报价">
+  <meta name="keywords" content="在线询价,化工产品报价,液碱,盐酸,次氯酸钠">
+  <title>在线询价 - 云南同思商贸有限公司</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!-- 导航栏 -->
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">同</div>
+      <span class="logo-text">云南同思商贸</span>
+    </a>
+    <div class="nav-menu">
+      <a href="index.html">首页</a>
+      <a href="products.html">产品中心</a>
+      <a href="about.html">关于我们</a>
+      <a href="inquiry.html" class="active">在线询价</a>
+      <a href="contact.html">联系我们</a>
+    </div>
+    <div class="nav-right">
+      <div class="lang-switch">
+        <a href="../zh/inquiry.html" class="active">中</a>
+        <a href="../vi/inquiry.html">越</a>
+        <a href="../en/inquiry.html">EN</a>
+      </div>
+      <a href="inquiry.html" class="nav-cta">立即询价</a>
+    </div>
+    <div class="mobile-menu-btn" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- 页面标题 -->
+<section class="hero" style="padding:120px 0 60px;">
+  <div class="container">
+    <h1 style="font-size:36px; text-align:center;">在线询价</h1>
+    <p style="text-align:center; margin-top:16px; opacity:0.9;">填写询价表单，我们将在24小时内与您联系</p>
+  </div>
+</section>
+
+<!-- 询价表单 -->
+<section class="section">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:1fr 360px; gap:40px;" class="inquiry-layout">
+
+      <!-- 左侧：询价表单 -->
+      <div style="background:var(--white); border-radius:12px; padding:40px; box-shadow:var(--shadow);">
+        <h2 style="font-size:24px; color:var(--primary); margin-bottom:24px;">提交询价</h2>
+        <form class="inquiry-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+          <div class="form-group">
+            <label>产品名称 *</label>
+            <select name="product" required>
+              <option value="">请选择产品</option>
+              <optgroup label="碱类产品">
+                <option value="液碱30%">液碱 30%</option>
+                <option value="液碱50%">液碱 50%</option>
+                <option value="食品级液碱">食品级液碱</option>
+                <option value="次氯酸钠">次氯酸钠</option>
+              </optgroup>
+              <optgroup label="酸类产品">
+                <option value="盐酸">盐酸</option>
+                <option value="硫酸">硫酸</option>
+                <option value="硝酸">硝酸</option>
+              </optgroup>
+              <optgroup label="其他化工产品">
+                <option value="双氧水">双氧水</option>
+                <option value="硫酸铵">硫酸铵</option>
+              </optgroup>
+              <optgroup label="化学试剂">
+                <option value="分析纯试剂">分析纯试剂（AR）</option>
+                <option value="化学纯试剂">化学纯试剂（CP）</option>
+                <option value="优级纯试剂">优级纯试剂（GR）</option>
+              </optgroup>
+              <optgroup label="电子级化学品">
+                <option value="电子级氢氟酸">电子级氢氟酸</option>
+                <option value="电子级硫酸">电子级硫酸</option>
+                <option value="电子级过氧化氢">电子级过氧化氢</option>
+                <option value="电子级氨水">电子级氨水</option>
+                <option value="电子级异丙醇">电子级异丙醇</option>
+              </optgroup>
+              <option value="其他">其他</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>需求数量 *</label>
+            <input type="text" name="quantity" required placeholder="例如：50吨/月、10桶、1吨等">
+          </div>
+
+          <div class="form-group">
+            <label>公司名称 *</label>
+            <input type="text" name="company" required placeholder="您的公司名称">
+          </div>
+
+          <div class="form-group">
+            <label>联系人 *</label>
+            <input type="text" name="name" required placeholder="您的姓名">
+          </div>
+
+          <div class="form-group">
+            <label>联系电话 *</label>
+            <input type="tel" name="phone" required placeholder="手机号码">
+          </div>
+
+          <div class="form-group">
+            <label>电子邮箱</label>
+            <input type="email" name="email" placeholder="your@email.com">
+          </div>
+
+          <div class="form-group">
+            <label>备注说明</label>
+            <textarea name="message" rows="5" placeholder="请描述您的具体需求，如浓度要求、包装方式、交货地点等..."></textarea>
+          </div>
+
+          <button type="submit" class="form-submit" style="width:100%; font-size:16px; padding:16px;">提交询价</button>
+        </form>
+      </div>
+
+      <!-- 右侧：联系方式快捷入口 -->
+      <div>
+        <!-- 微信二维码 -->
+        <div style="background:var(--white); border-radius:12px; padding:24px; box-shadow:var(--shadow); margin-bottom:24px; text-align:center;">
+          <h3 style="font-size:18px; color:var(--primary); margin-bottom:16px;">微信咨询</h3>
+          <div style="width:180px; height:180px; margin:0 auto 16px; background:var(--bg-light); border-radius:8px; display:flex; align-items:center; justify-content:center; color:var(--text-mid); font-size:14px;">
+            （待补充）<br>微信二维码
+          </div>
+          <p style="font-size:13px; color:var(--text-mid);">扫码添加微信</p>
+        </div>
+
+        <!-- WhatsApp -->
+        <div style="background:var(--white); border-radius:12px; padding:24px; box-shadow:var(--shadow); margin-bottom:24px;">
+          <h3 style="font-size:18px; color:var(--primary); margin-bottom:16px;">WhatsApp</h3>
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+            <div style="font-size:32px;">📱</div>
+            <div>
+              <p style="font-size:14px; color:var(--text-mid);">（待补充）</p>
+              <p style="font-size:12px; color:var(--text-mid);">WhatsApp 号码</p>
+            </div>
+          </div>
+          <a href="#" style="display:inline-block; background:#25D366; color:var(--white); padding:10px 20px; border-radius:6px; text-decoration:none; font-size:14px; font-weight:600;">WhatsApp 联系</a>
+        </div>
+
+        <!-- 电话 -->
+        <div style="background:var(--white); border-radius:12px; padding:24px; box-shadow:var(--shadow);">
+          <h3 style="font-size:18px; color:var(--primary); margin-bottom:16px;">电话咨询</h3>
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:16px;">
+            <div style="font-size:32px;">📞</div>
+            <div>
+              <p style="font-size:16px; font-weight:600; color:var(--text-dark);">（待补充）</p>
+              <p style="font-size:12px; color:var(--text-mid);">工作时间：9:00-18:00</p>
+            </div>
+          </div>
+          <a href="tel:" style="display:inline-block; background:var(--primary); color:var(--white); padding:10px 20px; border-radius:6px; text-decoration:none; font-size:14px; font-weight:600;">立即拨打</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 询价说明 -->
+<section class="section" style="background:var(--bg-light);">
+  <div class="container">
+    <h2 class="section-title">询价说明</h2>
+    <div class="adv-grid">
+      <div class="adv-card">
+        <div class="adv-icon">⏰</div>
+        <h3>快速响应</h3>
+        <p>我们承诺在24小时内回复您的询价，提供详细的产品报价和技术支持。</p>
+      </div>
+      <div class="adv-card">
+        <div class="adv-icon">📋</div>
+        <h3>定制方案</h3>
+        <p>根据您的实际需求，提供个性化的产品方案和包装规格。</p>
+      </div>
+      <div class="adv-card">
+        <div class="adv-icon">🚛</div>
+        <h3>物流支持</h3>
+        <p>提供危化品运输咨询，协助安排安全、合规的物流配送方案。</p>
+      </div>
+      <div class="adv-card">
+        <div class="adv-icon">🔒</div>
+        <h3>信息保密</h3>
+        <p>您提交的所有询价信息将严格保密，仅用于提供报价服务。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background:var(--primary); padding:48px 0; text-align:center;">
+  <div class="container">
+    <h2 style="color:var(--white); font-size:28px; margin-bottom:16px;">还有其他问题？</h2>
+    <p style="color:var(--white); opacity:0.9; margin-bottom:24px;">欢迎直接联系我们，我们将竭诚为您服务</p>
+    <a href="contact.html" class="btn btn-outline" style="font-size:16px; padding:16px 32px;">联系我们</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>云南同思商贸有限公司</h3>
+        <p>专业从事危险化学品及普通货物贸易的综合性企业，为国内外客户提供优质的一站式化工原料供应服务。</p>
+      </div>
+      <div class="footer-links">
+        <h4>快速链接</h4>
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="products.html">产品中心</a></li>
+          <li><a href="about.html">关于我们</a></li>
+          <li><a href="contact.html">联系我们</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>产品分类</h4>
+        <ul>
+          <li><a href="products.html#lye">碱类产品</a></li>
+          <li><a href="products.html#acid">酸类产品</a></li>
+          <li><a href="products.html#reagent">化学试剂</a></li>
+          <li><a href="products.html#electronic">电子级化学品</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>联系方式</h4>
+        <ul>
+          <li>云南省昆明市（待补充）</li>
+          <li>电话：（待补充）</li>
+          <li>邮箱：（待补充）</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 云南同思商贸有限公司 版权所有 | Yunnan Tongsi Trading Co., Ltd.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
